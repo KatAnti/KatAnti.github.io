@@ -1,0 +1,243 @@
+html {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	font-family: Verdana, sans-serif;
+	font-size: 16px;
+	color: #323232;
+	padding-bottom: 60px;
+	min-height: 100%;
+	box-sizing: border-box;
+}
+
+header {
+	padding: 30px 0 30px;
+	text-align: center;
+	font-size: 22px;
+	font-family: 'Open Sans Condensed', Arial, sans-serif;
+}
+
+main {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 20px 0;
+	text-align: center;
+	font-family: 'Open Sans Condensed', Arial, sans-serif;
+}
+
+li span {
+	font-weight: bold;
+}
+
+li a {
+	color: #e6005e;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+li a:hover {
+	opacity: 0.5;
+}
+
+li a:active {
+	color: #ae69e0;
+	opacity: 1;
+}
+
+h1 {
+	font-size: 25px;
+	text-align: center;
+	font-family: 'Open Sans Condensed', Arial, sans-serif;
+	margin: 20px 0 40px;
+}
+
+h2 {
+	text-align: left;
+	font-family: 'Open Sans Condensed', Arial, sans-serif;
+}
+
+.intro,
+.post {
+	text-align: center;
+}
+
+.post {
+	margin-top: 40px;
+}
+
+@keyframes slide {
+
+	from {
+		opacity: 0.1;
+		transform: translateY(15px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+
+}
+
+@keyframes highlighting {
+
+	0% {
+		background: rgba(255, 235, 59, 0.1);
+	}
+
+	30% {
+		background: rgba(255, 235, 59, 0.2);
+	}
+
+	60% {
+		background: rgba(255, 235, 59, 0.3);
+	}
+
+	90% {
+		background: rgba(255, 235, 59, 0.5);
+	}
+
+	100% {
+		background: rgba(255, 235, 59, 0.6);
+		border-radius: 50%;
+	}
+
+}
+
+.portfolio_name {
+/*font-family: 'Cuprum', Arial, sans-serif;*/
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.social_btn_wrap {
+	padding-top: 40px;
+}
+
+.social_btn {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 33px;
+	padding-top:7px;
+	margin-right: 40px;
+	color: #fff;
+	border-radius: 3px;
+	font-weight: bold;
+	text-decoration: none;
+	opacity: 0.6;
+}
+
+.social_btn:hover {
+	opacity: 1;
+}
+
+.social_btn:hover::before {
+	position: absolute;
+	top:-25px;
+	font-size: 16px;
+	animation-name: slide;
+	animation-duration: 700ms;
+}
+
+.social_btn:last-of-type {
+	margin-right: 0;
+}
+
+.vk_btn {
+	background: #507299;
+	border: 1px solid 
+}
+
+.vk_btn:hover::before {
+	content: "Вконтакте";
+	color: #507299;
+	left: -35%;
+}
+
+.skype_btn {
+	background: #03a9f4;
+}
+
+.skype_btn:hover::before {
+	content: "Skype";
+	color: #03a9f4;
+	left: 1%;
+}
+
+.freelance_btn {
+	background: #82B93C;
+}
+
+.freelance_btn:hover::before {
+	content: "Freelance.ru";
+	color: #82B93C;
+	left: -50%;
+}
+
+.email_btn {
+	background: #b93c3c;
+}
+
+.email_btn:hover::before {
+	content: "E-mail";
+	color: #b93c3c;
+	left: -1%;
+}
+
+.main_nav {
+	padding: 0;
+	padding-top:20px;
+	margin: 0;
+	font-size: 0;
+}
+
+.main_nav li{
+	display: inline-block;
+	min-width: 176px;
+	margin: 0;
+	border-right: 1px solid #232323;
+	font-size: 22px;
+}
+
+.main_nav li:last-of-type{
+	border-right: 0;
+}
+
+.main_nav_link {
+	display: block;
+	margin: 0 15px;
+	padding: 3px 0;
+	text-decoration: none;
+	color: #232323;
+}
+
+.main_nav_link:hover {
+	animation-name: highlighting;
+	animation-duration: 600ms;
+	animation-fill-mode: forwards;
+}
+
+
+@media screen and (max-width: 550px) {
+
+	.main_nav li{
+		display: block;
+		margin: 0 20px;
+		padding: 10px 0;
+		border: 0;
+		border-bottom: 1px solid #232323;
+	}
+
+}
