@@ -250,8 +250,17 @@ function activatePlate_5 (isActive) {
 
     function toNextPlate (evt) {
         evt.preventDefault();
-        if (data[3]) {
+        const email = plateElement.querySelector('.input-email').value;
+        if (data[3] && isEmail(email)) {
             activatePlate(6);
+        }
+    }
+
+    function isEmail (value) {
+        for ( let i = 0; i < value.length; i++ ) {
+            if ( value[i] === '@' ) {
+                return true;
+            }
         }
     }
 }
