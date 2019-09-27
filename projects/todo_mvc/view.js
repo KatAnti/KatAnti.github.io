@@ -41,8 +41,8 @@
     }
     
     //присваиваем значение инпуту
-    function setValue (value) {
-        rootElement.querySelector('#enter').value = value;
+    function setValueEmpty (value) {
+        rootElement.querySelector('#enter').value = '';
     }
 
     //создаем пункты списка и вставляем из в ДОМ
@@ -92,7 +92,7 @@
         getRoot: getRoot,
         update: update,
         getValue: getValue,
-        setValue: setValue,
+        setValueEmpty: setValueEmpty,
         clickHandler: () => {}
     };
 
