@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap&subset=cyrillic" rel="stylesheet">
+     <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous">
+    </script>
+    <script src="assets/js/app.min.js" defer></script>
+    <title>Отладка</title></head>
+<body>
+   
+
+<!-- first screen -->
+
+<header class="main-screen">
+   <div class="main-screen__background">
+       <picture class="main-screen__background-picture">
+            <source srcset="assets/img/main-screen-desktop@1x.png, assets/img/main-screen-desktop@2x.png 2x" media="(min-width: 960px)">
+            <source srcset="assets/img/main-screen-tablet@1x.png, assets/img/main-screen-tablet@2x.png 2x" media="(min-width: 660px)">
+            <img src="assets/img/main-screen-mobile@1x.png" srcset="assets/img/main-screen-mobile@2x.png 2x" alt="Йога">
+        </picture>
+   </div>
+    <div class="main-screen__container">
+        <div class="main-nav">
+            <button class="main-nav__btn">Меню</button>
+            <nav class="main-nav__menu">
+                <a class="main-nav__item" href="/">Направления</a>
+                <a class="main-nav__item" href="/">Абонементы</a>
+                <a class="main-nav__item" href="/">Наша команда</a>
+                <a class="main-nav__item" href="/">Отзывы</a>
+            </nav>
+        </div>
+        <a class="main-screen__phone" href="callto:88126901010">8 (812) 690-10-10</a>
+        <p class="main-screen__slogan">
+            Почувствуй расслабление в своем теле
+        </p>
+        <h1 class="main-screen__title">Йога Санкт-Питербург</h1>
+        <a class="logo" href="/">
+            <img src="assets/img/YOGA.svg" alt="YOGA">
+        </a>
+        <a href="/" class="main-screen__trial-lesson">
+            Запишитесь на бесплатное пробное занятие
+        </a>
+        <div class="main-screen__footer">
+            <ul class="social-media social-media--header">
+                <li class="social-media__item social-media__item--vk">
+                    <a href="/"></a>
+                </li>
+                <li class="social-media__item social-media__item--twitter">
+                    <a href="/"></a>
+                </li>
+                <li class="social-media__item social-media__item--facebook">
+                    <a href="/"></a>
+                </li>
+            </ul>
+            <span class="main-screen__city">Санкт-Петербург</span>
+        </div>
+    </div>
+</header>
+
+<!-- /first screen -->
+<!-- yoga directions -->
+
+<section class="directions">
+   <div class="standart-container">
+        <h2 class="directions__title">
+            Направления
+        </h2>
+        <div class="directions__container">
+            <!-- article -->
+            <article class="directions-card directions-card--main">
+                <a class="directions-card__preview">
+                    <picture class="main-screen__background-picture">
+                        <source srcset="assets/img/direction-01-desktop@1x.jpg, assets/img/direction-01-desktop@2x.jpg 2x" media="(min-width: 960px)">
+                        <source srcset="assets/img/direction-01-tablet@1x.jpg, assets/img/direction-01-tablet@2x.jpg 2x" media="(min-width: 660px)">
+                        <img src="assets/img/direction-01-mobile@1x.jpg" srcset="assets/img/direction-01-mobile@2x.jpg 2x" alt="Хатха-йога">
+                    </picture>
+                </a>
+                <div class="directions-card__info">
+                    <h2  class="directions-card__title">
+                        <a href="/">Хатха-йога</a>
+                    </h2>
+                    <p class="directions-card__work-time">
+                        Пн, Ср, Пт – с 12:00 до 15:00 <br />
+                        Вт, Чт – с 18:00 до 21:00
+                    </p>
+                    <p class="directions-card__instructor">
+                        Инструктор <br />
+                        Емельянова Полина
+                    </p>
+                    <a href="/" class="button button--arrow button--next button--big"></a>
+                </div>
+            </article>
+            <!-- /article -->
+            <div class="directions__right-column">
+                <!-- article -->
+                <article class="directions-card directions-card--inline">
+                    <a class="directions-card__preview">
+                        <img src="assets/img/direction-02@1x.jpg" srcset="assets/img/direction-02@2x.jpg 2x" alt="Хатха-йога">
+                    </a>
+                    <div class="directions-card__info">
+                        <h2  class="directions-card__title">
+                            <a href="/">Ашатанга-йога</a>
+                        </h2>
+                        <p class="directions-card__work-time">
+                            Пн, Ср, Пт – с 11:00 до 14:00 <br />
+                            Вт, Чт – с 19:00 до 21:00
+                        </p>
+                        <p class="directions-card__instructor">
+                            Инструктор <br />
+                            Емельянова Полина
+                        </p>
+                        <a href="/" class="button button--arrow button--next button--direction"></a>
+                    </div>
+                </article>
+                <!-- /article -->
+                <!-- article -->
+                <article class="directions-card directions-card--inline">
+                    <a class="directions-card__preview">
+                        <img src="assets/img/direction-03@1x.jpg" srcset="assets/img/direction-03@2x.jpg 2x" alt="Хатха-йога">
+                    </a>
+                    <div class="directions-card__info">
+                        <h2  class="directions-card__title">
+                            <a href="/">Кундалини-йога</a>
+                        </h2>
+                        <p class="directions-card__work-time">
+                            Пн, Ср, Пт – с 12:00 до 15:00 <br />
+                            Вт, Чт – с 18:00 до 21:00
+                        </p>
+                        <p class="directions-card__instructor">
+                            Инструктор <br />
+                            Емельянова Полина
+                        </p>
+                        <a href="/" class="button button--arrow button--next button--direction"></a>
+                    </div>
+                </article>
+                <!-- /article -->
+                <a href="/" class="directions__see-all-link">Смотреть все</a>
+            </div>
+        </div>
+   </div>
+</section>
+
+<!-- /yoga directions -->
+<!-- subscriptions -->
+
+<section class="subscriptions">
+  <div class="subscriptions__background">
+       <picture class="subscriptions__background-picture">
+            <source srcset="assets/img/third-screen-desktop@1x.png, assets/img/third-screen-desktop@2x.png 2x" media="(min-width: 960px)">
+            <source srcset="assets/img/third-screen-tablet@1x.png, assets/img/third-screen-tablet@2x.png 2x" media="(min-width: 660px)">
+            <img src="assets/img/third-screen-mobile@1x.png" srcset="assets/img/third-screen-mobile@2x.png 2x" alt="Йога">
+        </picture>
+   </div>
+   <div class="standart-container">
+       <h2 class="subscriptions__title">
+           Абонементы
+       </h2>
+       <ul class="subscriptions__panel">
+           <li>
+               <a class="subscriptions__time subscriptions__time--activejs" href="/" data-sub="month">
+                   1 месяц
+               </a>
+           </li>
+           <li>
+               <a class="subscriptions__time" href="/" data-sub="halfyear">
+                   6 месяцев
+               </a>
+           </li>
+           <li>
+               <a class="subscriptions__time" href="/" data-sub="year">
+                   12 месяцев
+               </a>
+           </li>
+       </ul>
+       
+       <div class="subscriptions__container" data-sub="month">
+            <div class="subscription-card">
+                <div class="subscription-card__title">
+                    Утро
+                </div>
+                <p class="subscription-card__work-time">
+                    Посещение<br />с 11:00 до 16:00
+                </p>
+                <div class="subscription-card__price">
+                    1 300 Р  
+                </div>
+                <a class="button button--text subscription-card__button" href="/">Заказать абонемент</a>
+            </div>
+            <div class="subscription-card subscription-card--active">
+                <div class="subscription-card__title">
+                    Безлимит
+                </div>
+                <p class="subscription-card__work-time">
+                    Посещение не ограничено по времени
+                </p>
+                <div class="subscription-card__price">
+                    2 800 Р  
+                </div>
+                <a class="button button--text subscription-card__button" href="/">Заказать абонемент</a>
+            </div>
+            <div class="subscription-card">
+                <div class="subscription-card__title">
+                    Вечер
+                </div>
+                <p class="subscription-card__work-time">
+                    Посещение<br />с 17:00 до 21:00
+                </p>
+                <div class="subscription-card__price">
+                    2 000 Р  
+                </div>
+                <a class="button button--text subscription-card__button" href="/">Заказать абонемент</a>
+            </div>
+       </div>
+        
+       <div class="subscriptions__container" data-sub="halfyear">
+            <div class="subscription-card">
+                <div class="subscription-card__title">
+                    Утро
+                </div>
+                <p class="subscription-card__work-time">
+                    Посещение<br />с 11:00 до 16:00
+                </p>
+                <div class="subscription-card__price">
+                    5 300 Р  
+                </div>
+                <a class="button button--text subscription-card__button" href="/">Заказать абонемент</a>
+            </div>
+            <div class="subscription-card subscription-card--active">
+                <div class="subscription-card__title">
+                    Безлимит
+                </div>
+                <p class="subscription-card__work-time">
+                    Посещение не ограничено по времени
+                </p>
+                <div class="subscription-card__price">
+                    8 800 Р  
+                </div>
+                <a class="button button--text subscription-card__button" href="/">Заказать абонемент</a>
+            </div>
+            <div class="subscription-card">
+                <div class="subscription-card__title">
+                    Вечер
+                </div>
+                <p class="subscription-card__work-time">
+                    Посещение<br />с 17:00 до 21:00
+                </p>
+                <div class="subscription-card__price">
+                    7 000 Р  
+                </div>
+                <a class="button button--text subscription-card__button" href="/">Заказать абонемент</a>
+            </div>
+       </div>
+           
+       <div class="subscriptions__container" data-sub="year">
+            <div class="subscription-card">
+                <div class="subscription-card__title">
+                    Утро
+                </div>
+                <p class="subscription-card__work-time">
+                    Посещение<br />с 11:00 до 16:00
+                </p>
+                <div class="subscription-card__price">
+                    10 300 Р  
+                </div>
+                <a class="button button--text subscription-card__button" href="/">Заказать абонемент</a>
+            </div>
+            <div class="subscription-card subscription-card--active">
+                <div class="subscription-card__title">
+                    Безлимит
+                </div>
+                <p class="subscription-card__work-time">
+                    Посещение не ограничено по времени
+                </p>
+                <div class="subscription-card__price">
+                    12 800 Р  
+                </div>
+                <a class="button button--text subscription-card__button" href="/">Заказать абонемент</a>
+            </div>
+            <div class="subscription-card">
+                <div class="subscription-card__title">
+                    Вечер
+                </div>
+                <p class="subscription-card__work-time">
+                    Посещение<br />с 17:00 до 21:00
+                </p>
+                <div class="subscription-card__price">
+                    18 000 Р  
+                </div>
+                <a class="button button--text subscription-card__button" href="/">Заказать абонемент</a>
+            </div>
+       </div>
+       
+    </div>
+</section>
+
+<!-- /subscriptions -->
+
+<!-- team -->
+
+<section class="team">
+    <div class="team__container">
+        <h2 class="team__title">
+            Наша команда
+        </h2>
+        <!-- SLIDER -->
+        
+        <div class="team-slider">
+           
+           <!-- Слайд -->
+           
+            <div class="team-slider__item">
+               <div class="team-slider__item-inner">
+                    <div class="team-slider__directions">
+                        <div class="team-slider__direction-card">
+                            <div class="team-slider__avatar">
+                                <img src="assets/img/avatar@1x.jpg" srcset="assets/img/avatar@2x.jpg 2x" alt="Сергей Попов">
+                            </div>
+                            <div class="team-slider__person-info">
+                                <p class="team-slider__person-name">
+                                    Инструктор Серёжа Попов
+                                </p>
+                                <p>
+                                    Хатха-йога
+                                </p>
+                            </div>
+                            <div class="team-slider__contacts">
+                                <ul class="social-media social-media--personal-card">
+                                    <li class="social-media__item social-media__item--vk">
+                                        <a href="/"></a>
+                                    </li>
+                                    <li class="social-media__item social-media__item--twitter">
+                                        <a href="/"></a>
+                                    </li>
+                                </ul>
+                                <a href="/" class="team-slider__see-more">Смотреть</a>
+                            </div>
+                        </div>
+                        <div class="team-slider__direction-card team-slider__direction-card--full">
+                            <div class="team-slider__avatar">
+                                <img src="assets/img/avatar@1x.jpg" srcset="assets/img/avatar@2x.jpg 2x" alt="Сергей Попов">
+                            </div>
+                            <div class="team-slider__person-info">
+                                <p class="team-slider__person-name">
+                                    Инструктор Серёжа Попов
+                                </p>
+                                <p>
+                                    Флоу-йога
+                                </p>
+                            </div>
+                            <div class="team-slider__contacts">
+                                <ul class="social-media social-media--personal-card">
+                                    <li class="social-media__item social-media__item--vk">
+                                        <a href="/"></a>
+                                    </li>
+                                    <li class="social-media__item social-media__item--twitter">
+                                        <a href="/"></a>
+                                    </li>
+                                </ul>
+                                <a href="/" class="team-slider__see-more">Смотреть</a>
+                            </div>
+                        </div>
+                        <div class="team-slider__direction-card team-slider__direction-card--full">
+                            <div class="team-slider__avatar">
+                                <img src="assets/img/avatar@1x.jpg" srcset="assets/img/avatar@2x.jpg 2x" alt="Сергей Попов">
+                            </div>
+                            <div class="team-slider__person-info">
+                                <p class="team-slider__person-name">
+                                    Инструктор Серёжа Попов
+                                </p>
+                                <p>
+                                    Йога в гамаках
+                                </p>
+                            </div>
+                            <div class="team-slider__contacts">
+                                <ul class="social-media social-media--personal-card">
+                                    <li class="social-media__item social-media__item--vk">
+                                        <a href="/"></a>
+                                    </li>
+                                    <li class="social-media__item social-media__item--twitter">
+                                        <a href="/"></a>
+                                    </li>
+                                </ul>
+                                <a href="/" class="team-slider__see-more">Смотреть</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-slider__about">
+                        <span class="team-slider__title"><b>Серёжа Попов</b></span>
+                        <p class="team-slider__experience">
+                            <b>Опыт преподавания: 8 лет</b>
+                        </p>
+                        <p>
+                            Практикует с 2011 года, является сертифицированным инструктором по флоу- йоге. Большой опыт преподавания йоги для начинающих и продолжающих.
+                        </p>
+                        <p>
+                            Обучался в Индии (International Association of Yoga: classical yoga, master of principles yoga therapy), Непале (опыт медитативных и дыхательных техник, проживание в Ашраме), Москва (Аштанга йога центр 108 А.Константинова), Московский центр классической йоги Виктора Бойко.
+                        </p>
+                        <p>
+                            Сертифицированный инструктор по фитнесу и йоге (БГУФК), по массажу (Оздоровительный Витал – центр №401).
+                        </p>
+                        <p>
+                            Организатор и участник многочисленных конвенций и семинаров по йоге, медитативным техникам и здоровому питанию.
+                        </p>
+                    </div>
+               </div>
+            </div>
+            
+            <!-- /Слайд -->
+           
+           <!-- Слайд -->
+           
+            <div class="team-slider__item">
+               <div class="team-slider__item-inner">
+                    <div class="team-slider__directions">
+                        <div class="team-slider__direction-card">
+                            <div class="team-slider__avatar">
+                                <img src="assets/img/avatar@1x.jpg" srcset="assets/img/avatar@2x.jpg 2x" alt="Сергей Попов">
+                            </div>
+                            <div class="team-slider__person-info">
+                                <p class="team-slider__person-name">
+                                    Инструктор Серёжа Попов
+                                </p>
+                                <p>
+                                    Хатха-йога
+                                </p>
+                            </div>
+                            <div class="team-slider__contacts">
+                                <ul class="social-media social-media--personal-card">
+                                    <li class="social-media__item social-media__item--vk">
+                                        <a href="/"></a>
+                                    </li>
+                                    <li class="social-media__item social-media__item--twitter">
+                                        <a href="/"></a>
+                                    </li>
+                                </ul>
+                                <a href="/" class="team-slider__see-more">Смотреть</a>
+                            </div>
+                        </div>
+                        <div class="team-slider__direction-card team-slider__direction-card--full">
+                            <div class="team-slider__avatar">
+                                <img src="assets/img/avatar@1x.jpg" srcset="assets/img/avatar@2x.jpg 2x" alt="Сергей Попов">
+                            </div>
+                            <div class="team-slider__person-info">
+                                <p class="team-slider__person-name">
+                                    Инструктор Серёжа Попов
+                                </p>
+                                <p>
+                                    Флоу-йога
+                                </p>
+                            </div>
+                            <div class="team-slider__contacts">
+                                <ul class="social-media social-media--personal-card">
+                                    <li class="social-media__item social-media__item--vk">
+                                        <a href="/"></a>
+                                    </li>
+                                    <li class="social-media__item social-media__item--twitter">
+                                        <a href="/"></a>
+                                    </li>
+                                </ul>
+                                <a href="/" class="team-slider__see-more">Смотреть</a>
+                            </div>
+                        </div>
+                        <div class="team-slider__direction-card team-slider__direction-card--full">
+                            <div class="team-slider__avatar">
+                                <img src="assets/img/avatar@1x.jpg" srcset="assets/img/avatar@2x.jpg 2x" alt="Сергей Попов">
+                            </div>
+                            <div class="team-slider__person-info">
+                                <p class="team-slider__person-name">
+                                    Инструктор Серёжа Попов
+                                </p>
+                                <p>
+                                    Йога в гамаках
+                                </p>
+                            </div>
+                            <div class="team-slider__contacts">
+                                <ul class="social-media social-media--personal-card">
+                                    <li class="social-media__item social-media__item--vk">
+                                        <a href="/"></a>
+                                    </li>
+                                    <li class="social-media__item social-media__item--twitter">
+                                        <a href="/"></a>
+                                    </li>
+                                </ul>
+                                <a href="/" class="team-slider__see-more">Смотреть</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-slider__about">
+                        <span class="team-slider__title"><b>Серёжа Попов</b></span>
+                        <p class="team-slider__experience">
+                            <b>Опыт преподавания: 8 лет</b>
+                        </p>
+                        <p>
+                            Практикует с 2011 года, является сертифицированным инструктором по флоу- йоге. Большой опыт преподавания йоги для начинающих и продолжающих.
+                        </p>
+                        <p>
+                            Обучался в Индии (International Association of Yoga: classical yoga, master of principles yoga therapy), Непале (опыт медитативных и дыхательных техник, проживание в Ашраме), Москва (Аштанга йога центр 108 А.Константинова), Московский центр классической йоги Виктора Бойко.
+                        </p>
+                        <p>
+                            Сертифицированный инструктор по фитнесу и йоге (БГУФК), по массажу (Оздоровительный Витал – центр №401).
+                        </p>
+                        <p>
+                            Организатор и участник многочисленных конвенций и семинаров по йоге, медитативным техникам и здоровому питанию.
+                        </p>
+                    </div>
+               </div>
+            </div>
+            
+            <!-- /Слайд -->
+           
+           <!-- Слайд -->
+           
+            <div class="team-slider__item">
+               <div class="team-slider__item-inner">
+                    <div class="team-slider__directions">
+                        <div class="team-slider__direction-card">
+                            <div class="team-slider__avatar">
+                                <img src="assets/img/avatar@1x.jpg" srcset="assets/img/avatar@2x.jpg 2x" alt="Сергей Попов">
+                            </div>
+                            <div class="team-slider__person-info">
+                                <p class="team-slider__person-name">
+                                    Инструктор Серёжа Попов
+                                </p>
+                                <p>
+                                    Хатха-йога
+                                </p>
+                            </div>
+                            <div class="team-slider__contacts">
+                                <ul class="social-media social-media--personal-card">
+                                    <li class="social-media__item social-media__item--vk">
+                                        <a href="/"></a>
+                                    </li>
+                                    <li class="social-media__item social-media__item--twitter">
+                                        <a href="/"></a>
+                                    </li>
+                                </ul>
+                                <a href="/" class="team-slider__see-more">Смотреть</a>
+                            </div>
+                        </div>
+                        <div class="team-slider__direction-card team-slider__direction-card--full">
+                            <div class="team-slider__avatar">
+                                <img src="assets/img/avatar@1x.jpg" srcset="assets/img/avatar@2x.jpg 2x" alt="Сергей Попов">
+                            </div>
+                            <div class="team-slider__person-info">
+                                <p class="team-slider__person-name">
+                                    Инструктор Серёжа Попов
+                                </p>
+                                <p>
+                                    Флоу-йога
+                                </p>
+                            </div>
+                            <div class="team-slider__contacts">
+                                <ul class="social-media social-media--personal-card">
+                                    <li class="social-media__item social-media__item--vk">
+                                        <a href="/"></a>
+                                    </li>
+                                    <li class="social-media__item social-media__item--twitter">
+                                        <a href="/"></a>
+                                    </li>
+                                </ul>
+                                <a href="/" class="team-slider__see-more">Смотреть</a>
+                            </div>
+                        </div>
+                        <div class="team-slider__direction-card team-slider__direction-card--full">
+                            <div class="team-slider__avatar">
+                                <img src="assets/img/avatar@1x.jpg" srcset="assets/img/avatar@2x.jpg 2x" alt="Сергей Попов">
+                            </div>
+                            <div class="team-slider__person-info">
+                                <p class="team-slider__person-name">
+                                    Инструктор Серёжа Попов
+                                </p>
+                                <p>
+                                    Йога в гамаках
+                                </p>
+                            </div>
+                            <div class="team-slider__contacts">
+                                <ul class="social-media social-media--personal-card">
+                                    <li class="social-media__item social-media__item--vk">
+                                        <a href="/"></a>
+                                    </li>
+                                    <li class="social-media__item social-media__item--twitter">
+                                        <a href="/"></a>
+                                    </li>
+                                </ul>
+                                <a href="/" class="team-slider__see-more">Смотреть</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-slider__about">
+                        <span class="team-slider__title"><b>Серёжа Попов</b></span>
+                        <p class="team-slider__experience">
+                            <b>Опыт преподавания: 8 лет</b>
+                        </p>
+                        <p>
+                            Практикует с 2011 года, является сертифицированным инструктором по флоу- йоге. Большой опыт преподавания йоги для начинающих и продолжающих.
+                        </p>
+                        <p>
+                            Обучался в Индии (International Association of Yoga: classical yoga, master of principles yoga therapy), Непале (опыт медитативных и дыхательных техник, проживание в Ашраме), Москва (Аштанга йога центр 108 А.Константинова), Московский центр классической йоги Виктора Бойко.
+                        </p>
+                        <p>
+                            Сертифицированный инструктор по фитнесу и йоге (БГУФК), по массажу (Оздоровительный Витал – центр №401).
+                        </p>
+                        <p>
+                            Организатор и участник многочисленных конвенций и семинаров по йоге, медитативным техникам и здоровому питанию.
+                        </p>
+                    </div>
+               </div>
+            </div>
+            
+            <!-- /Слайд -->
+            
+        </div>
+        <div class="team-slider__control-panel">
+            <span class="team-slider__page-count"></span>
+        </div>
+        <!-- /SLIDER -->
+    </div>
+</section>
+
+<!-- /team -->
+
+<!-- reviews -->
+
+<section class="reviews">
+    <div class="reviews__container">
+        <h2 class="reviews__title">
+            Отзывы
+        </h2>
+        <div class="reviews-slider">
+           
+           <!-- Слайд -->
+           
+            <div class="review-slider__review-card">
+                <div class="review-slider__review-card-inner">
+                    <p>
+                        Хожу на йогу вечером, чтобы расслабиться после тяжелого трудового дня. И после занятий наступает спокойствие!
+                    </p>
+                    <p>
+                        Йога это отличный способ быстро и качественно расслабиться. Спасибо инструктору Марине.
+                    </p>
+                    <div class="review-slider__user-card">
+                        <img src="assets/img/avatar-review@1x.jpg" alt="Сергей Попов" width="52" height="51">
+                        <div class="review-slider__user-contacts">
+                            <div class="review-slider__user-name">
+                                Серёжа Попов
+                            </div>
+                            <div class="review-slider__date">
+                                16 мая 2018
+                            </div>
+                            <ul class="social-media social-media--review-card">
+                                <li class="social-media__item social-media__item--vk">
+                                    <a href="/"></a>
+                                </li>
+                                <li class="social-media__item social-media__item--twitter">
+                                    <a href="/"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           <!-- /Слайд -->
+           
+           <!-- Слайд -->
+           
+            <div class="review-slider__review-card">
+                <div class="review-slider__review-card-inner">
+                    <p>
+                        Хожу на йогу вечером, чтобы расслабиться после тяжелого трудового дня. И после занятий наступает спокойствие!
+                    </p>
+                    <p>
+                        Йога это отличный способ быстро и качественно расслабиться. Спасибо инструктору Марине.
+                    </p>
+                    <div class="review-slider__user-card">
+                        <img src="assets/img/avatar-review@1x.jpg" alt="Сергей Попов" width="52" height="51">
+                        <div class="review-slider__user-contacts">
+                            <div class="review-slider__user-name">
+                                Серёжа Попов
+                            </div>
+                            <div class="review-slider__date">
+                                16 мая 2018
+                            </div>
+                            <ul class="social-media social-media--review-card">
+                                <li class="social-media__item social-media__item--vk">
+                                    <a href="/"></a>
+                                </li>
+                                <li class="social-media__item social-media__item--twitter">
+                                    <a href="/"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           <!-- /Слайд -->
+           
+           <!-- Слайд -->
+           
+            <div class="review-slider__review-card">
+                <div class="review-slider__review-card-inner">
+                    <p>
+                        Хожу на йогу вечером, чтобы расслабиться после тяжелого трудового дня. И после занятий наступает спокойствие!
+                    </p>
+                    <p>
+                        Йога это отличный способ быстро и качественно расслабиться. Спасибо инструктору Марине.
+                    </p>
+                    <div class="review-slider__user-card">
+                        <img src="assets/img/avatar-review@1x.jpg" alt="Сергей Попов" width="52" height="51">
+                        <div class="review-slider__user-contacts">
+                            <div class="review-slider__user-name">
+                                Серёжа Попов
+                            </div>
+                            <div class="review-slider__date">
+                                16 мая 2018
+                            </div>
+                            <ul class="social-media social-media--review-card">
+                                <li class="social-media__item social-media__item--vk">
+                                    <a href="/"></a>
+                                </li>
+                                <li class="social-media__item social-media__item--twitter">
+                                    <a href="/"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           <!-- /Слайд -->
+           
+           <!-- Слайд -->
+           
+            <div class="review-slider__review-card">
+                <div class="review-slider__review-card-inner">
+                    <p>
+                        Хожу на йогу вечером, чтобы расслабиться после тяжелого трудового дня. И после занятий наступает спокойствие!
+                    </p>
+                    <p>
+                        Йога это отличный способ быстро и качественно расслабиться. Спасибо инструктору Марине.
+                    </p>
+                    <div class="review-slider__user-card">
+                        <img src="assets/img/avatar-review@1x.jpg" alt="Сергей Попов" width="52" height="51">
+                        <div class="review-slider__user-contacts">
+                            <div class="review-slider__user-name">
+                                Серёжа Попов
+                            </div>
+                            <div class="review-slider__date">
+                                16 мая 2018
+                            </div>
+                            <ul class="social-media social-media--review-card">
+                                <li class="social-media__item social-media__item--vk">
+                                    <a href="/"></a>
+                                </li>
+                                <li class="social-media__item social-media__item--twitter">
+                                    <a href="/"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           <!-- /Слайд -->
+        </div>
+        <div class="reviews-slider__control-panel">
+            <span class="reviews-slider__page-count"></span>
+        </div>
+    </div>
+</section>
+
+<!-- /reviews -->
+
+<!-- footer -->
+
+<footer class="footer">
+    <div class="footer__background">
+       <div class="footer__desktop-container">
+            <div class="footer__form-container">
+                <form action="echo.php" method="get" class="trial-lesson-form">
+                    <h2 class="trial-lesson-form__title">
+                        Запишитесь на бесплатное пробное занятие
+                    </h2>
+                    <input class="trial-lesson-form__input" type="text" placeholder="Ваше имя">
+                    <input class="trial-lesson-form__input" type="tel" pattern="[0-9]{11}" placeholder="Ваш телефон" required>
+                    <input type="submit" class="button button--submit trial-lesson-form__submit" value="Оставить заявку">
+                </form>
+            </div>
+            <div class="footer__contacts-background">
+                <div class="footer__contacts-container">
+                    <div class="footer__contacts">
+                        <div class="footer__contact-item footer__contact-item--adress">
+                            Адрес:<br /> Московский проспект, 22
+                        </div>
+                        <div class="footer__contact-item footer__contact-item--work-time">
+                            График работы:<br /> Пн-Вс с 11:00 до 21:00
+                        </div>
+                        <div class="footer__contact-item footer__contact-item--number">
+                            Телефон: <a class="footer__number" href="callto:88126901010">8 (812) 690-10-10</a>
+                        </div>
+                        <div class="footer__contact-item footer__contact-item--email">
+                            Email: <a class="footer__email" href="mailto:yogaspb@gmail.com">yogaspb@gmail.com</a>
+                        </div>
+                        <div class="footer__contact-item footer__contact-item--social">
+                            <ul class="social-media social-media--footer">
+                                <li class="social-media__item social-media__item--vk">
+                                    <a href="/"></a>
+                                </li>
+                                <li class="social-media__item social-media__item--twitter">
+                                    <a href="/"></a>
+                                </li>
+                                <li class="social-media__item social-media__item--facebook">
+                                    <a href="/"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+    <div class="footer__copyrights">
+        <div class="standart-container footer__copyrights--container">
+            <span class="footer__copyright">
+                © 2018 Все права защищены
+            </span>
+            <a href="/" class="footer__copyright-link">
+                Yogaspb.com
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- /footer -->
+    
+</body>
+</html>
