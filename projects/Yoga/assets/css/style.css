@@ -1900,6 +1900,7 @@ img {
     width: 100%;
     padding: 10px 0;
     margin-bottom: 15px;
+    border-radius: none;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #8E80A9;
@@ -2045,7 +2046,9 @@ img {
     height: 31px;
     background-color: #8E80A9;
     border: none;
-    text-indent: -99999px;
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
 }
 
 .team-slider .slick-arrow:before {
@@ -2086,7 +2089,9 @@ img {
     height: 19px;
     background-color: #8E80A9;
     border: none;
-    text-indent: -99999px;
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
 }
 
 .team-slider__control-panel .slick-arrow:before {
@@ -2146,7 +2151,9 @@ img {
     height: 19px;
     background-color: #8E80A9;
     border: none;
-    text-indent: -99999px;
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
 }
 
 .reviews-slider__control-panel .slick-arrow:before {
@@ -2168,7 +2175,9 @@ img {
     height: 30px;
     background-color: #8E80A9;
     border: none;
-    text-indent: -99999px;
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
     z-index: 2;
 }
 
