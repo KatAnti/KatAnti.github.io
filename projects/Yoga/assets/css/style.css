@@ -821,6 +821,15 @@ img {
 
 .button--direction {
     position: absolute;
+    top: 0;
+    right: 0;
+    width: 43px;
+    height: 100%;
+}
+
+.button--direction::after {
+    width: 11px;
+    height: 11px;
 }
 
 @media (min-width: 768px) {
@@ -864,6 +873,9 @@ img {
 }
 
 .button--submit {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     padding: 18px 0;
     width: 100%;
     background-color: #E65C7B;
@@ -1595,6 +1607,7 @@ img {
 @media (min-width: 768px) {
     .footer__background {
         background-image: url("../img/footer-tablet@1x.jpg");
+        background-color: #8E80A9;
     }
 }
 

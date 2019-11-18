@@ -2963,7 +2963,7 @@ $teamSlider.slick({
   mobileFirst: true,
   infinite: false,
   responsive: [{
-    breakpoint: 768,
+    breakpoint: 767,
     settings: {
       appendArrows: '.team-slider__control-panel'
     }
