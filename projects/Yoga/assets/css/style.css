@@ -760,8 +760,12 @@ img {
 
 .button {
     display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background-color: #8E80A9;
     border: none;
+    border-radius: 0;
     font-size: 10px;
     color: #fff;
     text-decoration: none;
@@ -873,9 +877,6 @@ img {
 }
 
 .button--submit {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     padding: 18px 0;
     width: 100%;
     background-color: #E65C7B;
@@ -1900,7 +1901,10 @@ img {
     width: 100%;
     padding: 10px 0;
     margin-bottom: 15px;
-    border-radius: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #8E80A9;
