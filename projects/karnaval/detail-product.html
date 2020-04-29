@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script
+      src="http://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"></script>
+    <script src="assets/js/app.min.js" defer></script>
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <title>Карнавал</title></head>
+<body>
+   
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-contacts-top">
+                <div class="header-adress">
+                    г. Сыктывкар, Огородная 6
+                </div>
+                <div class="header-date-wrapper">
+                    <div class="header-date"></div>
+                    <a class="header-date-opeb-btn" href="/"></a>
+                    <div class="header-date-timetable">
+                        <div class="header-date-timetable-day">
+                           <span class="day-of-week">понедельник</span>
+                           <span>9:00-21:00</span>
+                        </div>
+                        <div class="header-date-timetable-day">
+                           <span class="day-of-week">вторник</span>
+                           <span>9:00-21:00</span>
+                        </div>
+                        <div class="header-date-timetable-day">
+                           <span class="day-of-week">среда</span>
+                           <span>9:00-21:00</span>
+                        </div>
+                        <div class="header-date-timetable-day">
+                           <span class="day-of-week">четверг</span>
+                           <span>9:00-21:00</span>
+                        </div>
+                        <div class="header-date-timetable-day">
+                           <span class="day-of-week">пятница</span>
+                           <span>9:00-21:00</span>
+                        </div>
+                        <div class="header-date-timetable-day">
+                           <span class="day-of-week">суббота</span>
+                           <span>9:00-21:00</span>
+                        </div>
+                        <div class="header-date-timetable-day">
+                           <span class="day-of-week">воскресенье</span>
+                           <span>9:00-21:00</span>
+                        </div>
+                    </div>
+                </div>
+                <a class="header-phone-number" href="tel:88005553355">
+                    8(800) 555-33-55
+                </a>
+            </div>
+            <div class="header-main">
+                <a class="logo" href="/">
+                    <img src="assets/img/logo-karnaval.png" alt="karnaval">
+                </a>
+                <input type="search" class="site-search" name="search" placeholder="Что ищем?">
+                <div class="header-controls">
+                    <a href="/" class="header-control login-btn header-login-dark"></a>
+                    <a href="list.html" class="header-control header-list-dark"></a>
+                    <a href="basket.html" class="header-control header-basket-dark"></a>
+                </div>
+            </div>
+        </div>
+    </header>    <nav class="main-nav">
+        <ul class="main-nav-body">
+            <li class="main-nav-item-first-level">   
+                <a href="catalog-first-level.html">
+                    Каталог
+                </a>
+                <ul class="main-nav-submenu">
+                    <li class="main-nav-submenu-item">   
+                        <a href="/">
+                            игрушки
+                        </a>
+                    </li>
+                    <li class="main-nav-submenu-item">   
+                        <a href="/">
+                            одежда и аксессуары
+                        </a>
+                        <ul class="main-nav-submenu-2lvl">
+                            <li class="main-nav-submenu-2lvl-item">   
+                                <a href="/">
+                                    Для мальчиков
+                                </a>
+                            </li>
+                            <li class="main-nav-submenu-2lvl-item">   
+                                <a href="/">
+                                    Для девочек
+                                </a>
+                            </li>
+                            <li class="main-nav-submenu-2lvl-item">   
+                                <a href="/">
+                                    Для новорожденных
+                                </a>
+                            </li>
+                            <li class="main-nav-submenu-2lvl-item">   
+                                <a href="/">
+                                    Верхняя одежда
+                                </a>
+                            </li>
+                            <li class="main-nav-submenu-2lvl-item">   
+                                <a href="/">
+                                    Карнавальные костюмы
+                                </a>
+                                <div class="main-nav-promo">
+                                    <div class="main-nav-promo-slogan">
+                                        Лучшее для вас!
+                                    </div>
+                                    <p class="main-nav-promo-text">
+                                        <span class="main-nav-promo-title">КАРНАВАЛЬНЫЙ КОСТЮМ</span>
+                                        "Человек-Паук" (куртка, брюки, маска)
+                                        Арт 7011
+                                        текстиль
+                                    </p>
+                                    <div class="main-nav-promo-img">
+                                        <img src="assets/img/menu-promo.jpg" alt="karnaval">
+                                    </div>
+                                    <a class="red-button menu-promo" href="/">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="main-nav-submenu-2lvl-item">   
+                                <a href="/">
+                                    Спортивные костюмы
+                                </a>
+                            </li>
+                            <li class="main-nav-submenu-2lvl-item">   
+                                <a href="/">
+                                    Одежда для сна
+                                </a>
+                            </li>
+                            <li class="main-nav-submenu-2lvl-item">   
+                                <a href="/">
+                                    От 1-3 лет
+                                </a>
+                            </li>
+                            <li class="main-nav-submenu-2lvl-item">   
+                                <a href="/">
+                                    От 3-6 лет
+                                </a>
+                            </li>
+                            <li class="main-nav-submenu-2lvl-item">   
+                                <a href="/">
+                                    От 6-12 лет
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-nav-submenu-item">   
+                        <a href="/">
+                            обувь
+                        </a>
+                    </li>
+                    <li class="main-nav-submenu-item">   
+                        <a href="/">
+                            для школы
+                        </a>
+                    </li>
+                    <li class="main-nav-submenu-item">   
+                        <a href="/">
+                            для малышей
+                        </a>
+                    </li>
+                    <li class="main-nav-submenu-item">   
+                        <a href="/">
+                            товары для праздника
+                        </a>
+                    </li>
+                    <li class="main-nav-submenu-item">   
+                        <a href="/">
+                            автокресла
+                        </a>
+                        <ul class="main-nav-submenu-2lvl">
+                            <li class="main-nav-submenu-item">   
+                                <a href="/">
+                                    Для мальчиков
+                                </a>
+                            </li>
+                            <li class="main-nav-submenu-item">   
+                                <a href="/">
+                                    Для девочек
+                                </a>
+                            </li>
+                            <li class="main-nav-submenu-item">   
+                                <a href="/">
+                                    Для новорожденных
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-nav-submenu-item">   
+                        <a href="/">
+                            летние товары
+                        </a>
+                    </li>
+                    <li class="main-nav-submenu-item">   
+                        <a href="/">
+                            развивающие игрушки
+                        </a>
+                    </li>
+                    <li class="main-nav-submenu-item">   
+                        <a href="/">
+                            транспорт
+                        </a>
+                    </li>
+                    <li class="main-nav-submenu-item">   
+                        <a href="/">
+                            распродажа
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="main-nav-item-first-level">   
+                <a href="/">
+                    Лучшее для вас!
+                </a>
+            </li>
+            <li class="main-nav-item-first-level">   
+                <a class="pick-gift-popup-btn" href="/">
+                    Подобрать подарок
+                </a>
+            </li>
+            <li class="main-nav-item-first-level">   
+                <a href="custom-order.html">
+                    Привезти под заказ
+                </a>
+            </li>
+            <li class="main-nav-item-first-level">   
+                <a href="forum.html">
+                    Обсуждения
+                </a>
+            </li>
+        </ul>
+    </nav>    <div class="content-page-wrapper">
+       <div class="wrapper wrapper-padding-bottom">
+            
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs-item"><a href="#">Главная</a></li>
+              <li class="breadcrumbs-item"><a href="#">Одежда и аксессуары</a></li>
+              <li class="breadcrumbs-item"><a href="#">Карнавальные костюмы</a></li>
+              <li class="breadcrumbs-item">КАРНАВАЛЬНЫЙ КОСТЮМ "Аленка"</li>
+            </ul>
+            <div class="detail-product-card-main">
+                <div class="product-card-photogallery">
+                    <div class="photogallery-slider-aside">
+                        <div class="photogallery-slider-aside-item">
+                            <img src="assets/img/product-detailed.jpg" alt="Товар">
+                        </div>
+                        <div class="photogallery-slider-aside-item">
+                            <img src="assets/img/test-02.jpg" alt="Товар">
+                        </div>
+                        <div class="photogallery-slider-aside-item">
+                            <img src="assets/img/test-01.jpg" alt="Товар">
+                        </div> 
+                        <div class="photogallery-slider-aside-item">
+                            <img src="assets/img/product-detailed.jpg" alt="Товар">
+                        </div>
+                        <div class="photogallery-slider-aside-item">
+                            <img src="assets/img/test-02.jpg" alt="Товар">
+                        </div>
+                        <div class="photogallery-slider-aside-item">
+                            <img src="assets/img/test-01.jpg" alt="Товар">
+                        </div>
+                    </div>
+                    <div class="photogallery-slider-main">
+                        <a data-fancybox="gallery" href="assets/img/product-detailed.jpg" class="photogallery-slider-main-item">
+                            <img src="assets/img/product-detailed.jpg" alt="Товар">
+                        </a>
+                        <a data-fancybox="gallery" href="assets/img/test-02.jpg" class="photogallery-slider-main-item">
+                            <img src="assets/img/test-02.jpg" alt="Товар">
+                        </a>
+                        <a data-fancybox="gallery" href="assets/img/test-01.jpg" class="photogallery-slider-main-item">
+                            <img src="assets/img/test-01.jpg" alt="Товар">
+                        </a> 
+                        <a data-fancybox="gallery" href="assets/img/product-detailed.jpg" class="photogallery-slider-main-item">
+                            <img src="assets/img/product-detailed.jpg" alt="Товар">
+                        </a>
+                        <a data-fancybox="gallery" href="assets/img/test-02.jpg" class="photogallery-slider-main-item">
+                            <img src="assets/img/test-02.jpg" alt="Товар">
+                        </a>
+                        <a data-fancybox="gallery" href="assets/img/test-01.jpg" class="photogallery-slider-main-item">
+                            <img src="assets/img/test-01.jpg" alt="Товар">
+                        </a>
+                    </div>
+                </div>
+                <div class="detail-product-card-info">
+                    <h1>КАРНАВАЛЬНЫЙ КОСТЮМ "Аленка"</h1>
+                    <a class="share-link" href="/"></a>
+                    <div class="standart-select-wrapper">
+                        <select class="standart-select">
+                            <option value="1">Размер:  110-120</option>
+                            <option value="2">Размер:  120-130</option>
+                            <option value="3">Размер:  130-140</option>
+                            <option value="4">Размер:  140-150</option>
+                        </select>
+                    </div>
+                    <span class="detail-product-card-availability-label">
+                        Есть в наличии
+                    </span>
+                    <div class="detail-product-card-info-reviews">
+                        <ul class="rating">
+                            <li>
+                                <a href="/" class="rating-star active"></a>
+                            </li>
+                            <li>
+                                <a href="/" class="rating-star active"></a>
+                            </li>
+                            <li>
+                                <a href="/" class="rating-star active"></a>
+                            </li>
+                            <li>
+                                <a href="/" class="rating-star active"></a>
+                            </li>
+                            <li>
+                                <a href="/" class="rating-star active"></a>
+                            </li>
+                        </ul>
+                        <a class="detail-product-card-link-reviews" href="/">1 отзыв</a>
+                        <a class="detail-product-card-link-add-review" href="/">Написать отзыв</a>
+                    </div>
+                    <div class="detail-product-card-account">
+                        <div class="detail-product-card-price">
+                            Цена:
+                            <div class="detail-product-card-price-number">
+                                3600 руб.
+                            </div>
+                        </div>
+                        <div class="product-amount-wrapper">
+                            <button class="product-amount-btn product-amount-btn-plus">+</button>
+                            <input class="product-amount-field" type="text" value="1" readonly>
+                            <button class="product-amount-btn product-amount-btn-minus">-</button>
+                        </div>
+                    </div>
+                    <div class="detail-product-card-btns">
+                        <button class="detail-product-card-basket-btn red-button">
+                           В корзину
+                        </button>
+                        <button class="detail-product-card-list-btn border-button">
+                           В список покупок
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-product-card-details">
+                <div class="detail-product-card-tabs">
+                    <a class="detail-product-card-tab" data-label="description" href="/">Описание товара</a>
+                    <a class="detail-product-card-tab" data-label="reviews" href="/">Отзывы (1)</a>
+                    <a class="detail-product-card-tab" data-label="faq" href="/">Вопрос менеджеру (1)</a>
+                </div>
+                <div class="detail-product-card-tab-section show" data-label="description">
+                    <p>Характеристики товара:</p>
+                    <ul>
+                        <li>
+                            материал: дерево
+                        </li>
+                        <li>
+                            максимальный вес: 20 кг
+                        </li>
+                        <li>
+                            особенности: ручная работа
+                        </li>
+                        <li>
+                            вес в упаковке: 3,80 г
+                        </li>
+                        <li>
+                            габариты:90х30х70 см
+                        </li>
+                    </ul>
+                    <p>Изготовлен из экологических материалов, соответствует нормам Европейского стандарта безопасности игрушек и товаров для детей. Выполнен в виде садового домика, дополнен мебелью, по бокам - ручки, за которые можно держаться.</p>
+            
+                    Подробнее:<br>
+                    Для детей в возрасте: от 12 месяцев до 3 лет<br>
+                    Вес товара в упаковке: 3,8 кг<br>
+                    Габариты товара в упаковке: 56x19x62 см<br>
+                    Штрих-код: 4680213016232<br>
+                </div>
+                <div class="detail-product-card-tab-section" data-label="reviews">
+                    <a class="add-review-link" href="/">Написать отзыв</a>
+                    <div class="review-template">
+                        <div class="review-template-user-info">
+                            <div class="review-user-avatar">
+                                <img src="assets/img/user-avatar.png" alt="Аватар">
+                            </div>
+                            <div class="review-name-date">
+                                Марина Рогачева, 3 декабря 2014 г.
+                            </div>
+                            <ul class="rating">
+                                <li>
+                                    <a href="/" class="rating-star active"></a>
+                                </li>
+                                <li>
+                                    <a href="/" class="rating-star active"></a>
+                                </li>
+                                <li>
+                                    <a href="/" class="rating-star active"></a>
+                                </li>
+                                <li>
+                                    <a href="/" class="rating-star active"></a>
+                                </li>
+                                <li>
+                                    <a href="/" class="rating-star"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="review-text">
+                            Изготовлена из экологических материалов, соответствует нормам Европейского стандарта безопасности игрушек и товаров для детей. Выполнена в виде милой пони, дополнена удобным седлом и уздечкой, по бокам - ручки, за которые можно держаться.
+                        </p>
+                        <div class="like-dislike-wrapper">
+                            <button class="like-dislike-btn like-btn"></button>
+                            <button class="like-dislike-btn dislike-btn"></button>
+                        </div> 
+                    </div>
+                </div>
+                <div class="detail-product-card-tab-section" data-label="faq">
+                    <a class="add-review-link" href="/">Задать вопрос</a>
+                    <div class="review-template answers">
+                        <div class="review-template-user-info">
+                            <div class="review-user-avatar">
+                                <img src="assets/img/user-avatar.png" alt="Аватар">
+                            </div>
+                            <div class="review-name-date">
+                                Марина Рогачева, 3 декабря 2014 г.
+                            </div>
+                            <ul class="rating">
+                                <li>
+                                    <a href="/" class="rating-star active"></a>
+                                </li>
+                                <li>
+                                    <a href="/" class="rating-star active"></a>
+                                </li>
+                                <li>
+                                    <a href="/" class="rating-star active"></a>
+                                </li>
+                                <li>
+                                    <a href="/" class="rating-star active"></a>
+                                </li>
+                                <li>
+                                    <a href="/" class="rating-star"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="review-text">
+                            Здравствуйте. Возможно ли цвет  выбрать для данной модели в магазине? Интересует синий  цвет.
+                        </p>
+                        <a class="answer-link" href="/">Ответить</a>
+                        <div class="review-template-answer">
+                            <div class="review-template-answer-body">
+                                <div class="answer-name-date">
+                                    Консультант интернет магазина, 3 декабря 2014 г.
+                                </div>
+                                <p>
+                                    Здравствуйте. Возможно.
+                                </p>
+                            </div>
+                            <div class="like-dislike-wrapper">
+                                <button class="like-dislike-btn like-btn"></button>
+                                <button class="like-dislike-btn dislike-btn"></button>
+                            </div>
+                            <a class="answer-link inner-answer-link" href="/">Ответить</a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <section class="same-products-wrapper">
+                    <h3>Похожие товары</h3>
+                    <div class="same-products-slider-wrapper">
+                        <div class="same-products-slider">
+                            <div class="same-products-slider-item">
+                                <a class="same-products-slider-item-img" href="/">
+                                    <img src="assets/img/product-01.jpg" alt="Товар">
+                                </a>
+                                <a class="same-products-slider-item-ttl" href="/">
+                                    Карнавальный костюм “Алёнушка”
+                                </a>
+                                <span class="same-products-slider-item-price">
+                                    8700 руб.
+                                </span>
+                            </div>
+                            <div class="same-products-slider-item">
+                                <a class="same-products-slider-item-img" href="/">
+                                    <img src="assets/img/product-02.jpg" alt="Товар">
+                                </a>
+                                <a class="same-products-slider-item-ttl" href="/">
+                                    Карнавальный костюм “ИВАНУШКА”
+                                </a>
+                                <span class="same-products-slider-item-price">
+                                    8700 руб.
+                                </span>
+                            </div>
+                            <div class="same-products-slider-item">
+                                <a class="same-products-slider-item-img" href="/">
+                                    <img src="assets/img/product-03.jpg" alt="Товар">
+                                </a>
+                                <a class="same-products-slider-item-ttl" href="/">
+                                    Карнавальный костюм “ЖАСМИН”
+                                </a>
+                                <span class="same-products-slider-item-price">
+                                    8700 руб.
+                                </span>
+                            </div>
+                            <div class="same-products-slider-item">
+                                <a class="same-products-slider-item-img" href="/">
+                                    <img src="assets/img/product-01.jpg" alt="Товар">
+                                </a>
+                                <a class="same-products-slider-item-ttl" href="/">
+                                    Карнавальный костюм “Алёнушка”
+                                </a>
+                                <span class="same-products-slider-item-price">
+                                    8700 руб.
+                                </span>
+                            </div>
+                            <div class="same-products-slider-item">
+                                <a class="same-products-slider-item-img" href="/">
+                                    <img src="assets/img/product-02.jpg" alt="Товар">
+                                </a>
+                                <a class="same-products-slider-item-ttl" href="/">
+                                    Карнавальный костюм “ИВАНУШКА”
+                                </a>
+                                <span class="same-products-slider-item-price">
+                                    8700 руб.
+                                </span>
+                            </div>
+                            <div class="same-products-slider-item">
+                                <a class="same-products-slider-item-img" href="/">
+                                    <img src="assets/img/product-03.jpg" alt="Товар">
+                                </a>
+                                <a class="same-products-slider-item-ttl" href="/">
+                                    Карнавальный костюм “ЖАСМИН”
+                                </a>
+                                <span class="same-products-slider-item-price">
+                                    8700 руб.
+                                </span>
+                            </div>
+                            <div class="same-products-slider-item">
+                                <a class="same-products-slider-item-img" href="/">
+                                    <img src="assets/img/product-01.jpg" alt="Товар">
+                                </a>
+                                <a class="same-products-slider-item-ttl" href="/">
+                                    Карнавальный костюм “Алёнушка”
+                                </a>
+                                <span class="same-products-slider-item-price">
+                                    8700 руб.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+       </div>
+    </div>
+    <footer class="footer">
+        <div class="wrapper">
+            <a class="footer-bonus-link" href="/">
+                Бонусная программа
+            </a>
+            <div class="footer-contacts">
+                <a class="footer-phone-number" href="tel:88005553355">
+                    8(800) 555-33-55
+                </a>
+                <a class="footer-callback" href="/">
+                    Заказать обратный звонок
+                </a>
+            </div>
+            <div class="footer-social-media-wrapper">
+                Мы в соцсетях
+                <div class="footer-social-media">
+                    <a class="footer-social-media-link vk-link" href="/"></a>
+                    <a class="footer-social-media-link odn-link" href="/"></a>
+                    <a class="footer-social-media-link insta-link" href="/"></a>
+                </div>
+            </div>
+        </div>
+    </footer>    <div class="login-popup" data-bundle="login">
+       <button class="login-popup-close-btn close_popup"></button>
+        <div class="login-popup-title">
+            Войти на сайт
+        </div>
+        <form class="login-form" method="post" action="/catalog-first-level.html">
+            <input class="login-form-input" type="tel" placeholder="Логин/Телефон">
+            <input class="login-form-input" type="password" placeholder="Пароль">
+            <input class="red-button submit-login-form" type="submit" value="Войти">
+        </form>
+        <div class="login-social-media-wrapper">
+          <p>
+              Войти, используя аккаунт соц сети
+          </p>
+           <div class="login-social-media">
+                <a class="login-social-media-link vk-link" href="/"></a>
+                <a class="login-social-media-link odn-link" href="/"></a>
+                <a class="login-social-media-link insta-link" href="/"></a>
+           </div>
+        </div>
+        <div class="login-form-other-links">
+            <a class="lost-password-link" href="/">>>Забыли пароль?</a>
+            <a class="registration-link" href="registration.html">>>Регистрация</a>
+        </div>
+    </div>    <div class="pick-gift-popup">
+        <button class="close_popup"></button>
+        <div class="pick-gift-popup-title">
+            Подобрать подарок
+        </div>
+        <form class="pick-gift-form" method="get" action="/catalog-first-level.html">
+            <div class="pick-gift-form-section">
+                <div class="pick-gift-form-section-ttl">1. Для кого подарок</div>
+                <input id="gemder-male" type="radio" class="standart-radiobox" name="gender" value="mail">
+                <label for="gemder-male" class="standart-radiobox-wrapper">
+                    для мальчиков
+                </label>
+                <input id="gemder-female" type="radio" class="standart-radiobox" name="gender" value="female">
+                <label for="gemder-female" class="standart-radiobox-wrapper">
+                    для девочек
+                </label>
+            </div>
+            <div class="pick-gift-form-section">
+                <div class="pick-gift-form-section-ttl">4. Возраст</div>
+                <div class="pick-gift-age-wrapper">
+                   <div>
+                        <input id="age-01" type="radio" class="standart-radiobox" name="age" value="0-1">
+                        <label for="age-01" class="standart-radiobox-wrapper">
+                            0 - 1
+                        </label>
+                        <input id="age-13" type="radio" class="standart-radiobox" name="age" value="1-3">
+                        <label for="age-13" class="standart-radiobox-wrapper">
+                            1 - 3
+                        </label>
+                        <input id="age-45" type="radio" class="standart-radiobox" name="age" value="4-5">
+                        <label for="age-45" class="standart-radiobox-wrapper">
+                            4 - 5
+                        </label>
+                   </div>
+                   <div>
+                        <input id="age-68" type="radio" class="standart-radiobox" name="age" value="6-8">
+                        <label for="age-68" class="standart-radiobox-wrapper">
+                            6 - 8
+                        </label>
+                        <input id="age-812" type="radio" class="standart-radiobox" name="age" value="8-12">
+                        <label for="age-812" class="standart-radiobox-wrapper">
+                            8 - 12
+                        </label>
+                        <input id="age-12" type="radio" class="standart-radiobox" name="age" value="12">
+                        <label for="age-12" class="standart-radiobox-wrapper">
+                            12+
+                        </label>
+                   </div>
+                </div>
+            </div>
+            <div class="pick-gift-form-section">
+                <div class="pick-gift-form-section-ttl">2. Цена</div>
+                <div id="pick-gift-slider-price" class="slider-price-range"></div>
+                <div class="slider-price-range-controls-wrapper">
+                    от <input id="pick-gift-slider-price-controls-min" class="slider-price-range-control" type="number" value="0">
+                     до <input id="pick-gift-slider-price-controls-max" class="slider-price-range-control" type="number" value="10000">
+                </div>
+            </div>
+            <div class="pick-gift-form-section">
+                <div class="pick-gift-form-section-ttl">5. Бренд</div>
+                <div class="standart-select-wrapper">
+                    <select class="standart-select">
+                        <option value="1">Любой</option>
+                        <option value="2">Первый</option>
+                        <option value="3">Второй</option>
+                        <option value="4">Третий</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pick-gift-form-section">
+                <div class="pick-gift-form-section-ttl">3. На какое событие</div>
+                <div class="standart-select-wrapper">
+                    <select class="standart-select">
+                        <option value="1">Любое</option>
+                        <option value="2">День Рождения</option>
+                        <option value="3">Новый год</option>
+                        <option value="4">Пасха</option>
+                    </select>
+                </div>
+            </div>
+            <input class="border-button pick-gift-form-submit-btn" type="submit" value="Подобрать">
+        </form>
+    </div>    <div class="overlay"></div>
+    
+</body>
+</html>
