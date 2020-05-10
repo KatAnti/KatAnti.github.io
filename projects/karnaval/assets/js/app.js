@@ -3620,12 +3620,13 @@ function clock() {
 var days = document.querySelectorAll(".day-of-week");
 var daysWrappers = document.querySelectorAll(".header-date-timetable-day");
 var count;
-var timetable = document.querySelector(".header-date-timetable");
-var timetableBtn = document.querySelector(".header-date-opeb-btn");
-timetableBtn.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  timetable.classList.toggle("show-flex");
-});
+/*let timetable = document.querySelector(".header-date-timetable");
+let timetableBtn = document.querySelector(".header-date-opeb-btn");
+
+timetableBtn.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    timetable.classList.toggle("show-flex");
+});*/
 
 for (var i = 0; i < days.length; i++) {
   if (dayW[new Date().getDay()] == days[i].textContent) {
