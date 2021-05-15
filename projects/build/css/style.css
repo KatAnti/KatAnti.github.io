@@ -559,11 +559,13 @@ a {
       padding-right: 45px;
       border-top: none; }
       .main-nav--nojs {
-        display: block; }
+        display: block;
+        padding-bottom: 50px; }
       .main-nav--open {
         display: block;
         height: calc(100vh - 180px);
-        overflow-y: auto; } }
+        overflow-y: auto;
+        padding-bottom: 50px; } }
   @media (max-width: 767px) {
     .main-nav {
       padding-top: 0;
@@ -616,9 +618,6 @@ a {
 .main-nav__login-link {
   font-size: 18px;
   line-height: 23px; }
-  @media (max-width: 1023px) {
-    .main-nav__login-link {
-      margin-bottom: 30px; } }
 
 @media (max-width: 1023px) {
   .main-nav__mobile-menu {
