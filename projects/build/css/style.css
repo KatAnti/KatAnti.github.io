@@ -560,12 +560,12 @@ a {
       border-top: none; }
       .main-nav--nojs {
         display: block;
-        padding-bottom: 50px; }
+        padding-bottom: 70px; }
       .main-nav--open {
         display: block;
         height: calc(100vh - 180px);
         overflow-y: auto;
-        padding-bottom: 50px; } }
+        padding-bottom: 70px; } }
   @media (max-width: 767px) {
     .main-nav {
       padding-top: 0;
