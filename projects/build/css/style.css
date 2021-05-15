@@ -821,6 +821,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-bottom: 1px solid #ffffff; }
 
 .subscription-form__email-wrapper input:hover::-webkit-input-placeholder {
@@ -873,7 +876,6 @@ a {
   cursor: pointer; }
 
 .subscription-form__submit svg {
-  margin-left: 8px;
   -webkit-transition: 0.5s;
   transition: 0.5s; }
 
