@@ -2561,7 +2561,7 @@ a.catalog__filter-close {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  border-radius: none; }
+  border-radius: 0; }
   .login-popup input::-webkit-input-placeholder {
     font-family: "Poppins", "Arial", sans-serif;
     color: #9b9997; }
