@@ -15,7 +15,7 @@
   <body class="body">
     <header class="header header--nojs">
       <div class="header__wrapper">
-        <button class="header__mobile-menu-btn" type="button"></button>
+        <button class="header__mobile-menu-btn" type="button">Toggle mobile menu</button>
         <form class="header__search" action="https://echo.htmlacademy.ru" method="GET">
           <button aria-label="Search" type="button">
             <svg width="14" height="14">
@@ -82,11 +82,12 @@
       <section class="catalog">
         <h2 class="visually-hidden">Jewellery catalog online</h2>
         <div class="catalog__aside">
-          <a class="catalog__mobile-filter" href="#">Filter</a>
+          <button class="catalog__mobile-filter" aria-label="Toggle filter">Filter</button>
           <form class="catalog__filter" action="https://echo.htmlacademy.ru" method="GET">
             <a class="catalog__filter-close" href="#">Close filter</a>
             <fieldset>
-              <legend class="tab tab--open"><a href="#">Product</a></legend>
+              <legend class="visually-hidden">Product</legend>
+              <button class="tab tab--open" type="button">Product</button>
               <div class="tab-content tab-content--start-open">
                 <input class="visually-hidden" id="necklaces" type="checkbox" name="Necklaces">
                 <label for="necklaces">Necklaces</label>
@@ -100,7 +101,8 @@
             </fieldset>
 
             <fieldset>
-              <legend class="tab"><a href="#">Material</a></legend>
+              <legend class="visually-hidden">Material</legend>
+              <button class="tab" type="button">Material</button>
               <div class="tab-content">
                 <input class="visually-hidden" id="gold" type="checkbox" name="Gold">
                 <label for="gold">Gold</label>
@@ -110,7 +112,8 @@
             </fieldset>
 
             <fieldset>
-              <legend class="tab"><a href="#">Collection</a></legend>
+              <legend class="visually-hidden">Collection</legend>
+              <button class="tab" type="button">Collection</button>
               <div class="tab-content">
                 <input class="visually-hidden" id="pink-flamingo" type="checkbox" name="Pink flamingo">
                 <label for="pink-flamingo">Pink flamingo</label>
@@ -120,12 +123,13 @@
             </fieldset>
 
             <fieldset>
-              <legend class="tab tab--open"><a href="#">Price</a></legend>
+              <legend class="visually-hidden">Price</legend>
+              <button class="tab tab--open" type="button">Price</button>
               <div class="tab-content tab-content--start-open">
                 <div class="price-range">
-                  <button class="price-range__control price-range__control--left" type="button"><span>$ 55</span></button>
+                  <button class="price-range__control price-range__control--left" type="button" aria-label="Minimum price"><span>$ 55</span></button>
                   <div class="price-range__choosen"></div>
-                  <button class="price-range__control price-range__control--right" type="button"><span>$ 135</span></button>
+                  <button class="price-range__control price-range__control--right" type="button" aria-label="Maximum price"><span>$ 135</span></button>
                 </div>
               </div>
             </fieldset>
@@ -415,7 +419,7 @@
     </footer>
     <div class="body__overlay">
       <div class="popup login-popup">
-        <button class="popup__close-button" type="button"></button>
+        <button class="popup__close-button" type="button">Close popup</button>
         <form class="login-popup__form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="login-popup__title">Log In</div>
           <label for="login-email" class="visually-hidden">Enter Your E-mail</label>

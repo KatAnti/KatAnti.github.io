@@ -305,7 +305,8 @@ a {
   background: transparent;
   border-top: 2px solid #1d1613;
   border-bottom: 2px solid #1d1613;
-  cursor: pointer; }
+  cursor: pointer;
+  text-indent: -99999px; }
   .header__mobile-menu-btn:hover {
     opacity: 0.6; }
   .header__mobile-menu-btn:active {
@@ -1054,6 +1055,7 @@ a {
 
 .products-slider > a {
   display: inline-block;
+  vertical-align: top;
   font-weight: 500;
   border-bottom: 1px solid #a87b62;
   margin-bottom: 59px; }
@@ -1199,6 +1201,7 @@ a {
 
 .blog > a {
   display: inline-block;
+  vertical-align: top;
   font-weight: 500;
   border-bottom: 1px solid #a87b62;
   margin-bottom: 61px; }
@@ -1376,6 +1379,7 @@ a {
 
 .blog-article__info a {
   display: inline-block;
+  vertical-align: top;
   font-weight: 500;
   border-bottom: 1px solid #a87b62;
   -ms-flex-item-align: center;
@@ -1426,21 +1430,23 @@ a {
   .questions li:last-child {
     border-bottom: 1px solid #a87b62; }
 
-.questions a {
+.questions button {
   display: block;
+  width: 100%;
   padding: 45px 60px 42px 42px;
   font-weight: 500;
   font-size: 18px;
-  line-height: 23px; }
-  .questions a:hover {
+  line-height: 23px;
+  cursor: pointer; }
+  .questions button:hover {
     color: #a87b62; }
-  .questions a:active {
+  .questions button:active {
     color: #c3a493; }
   @media (max-width: 1023px) {
-    .questions a {
+    .questions button {
       padding-left: 50px; } }
   @media (max-width: 767px) {
-    .questions a {
+    .questions button {
       padding-top: 17px;
       padding-bottom: 20px;
       padding-left: 24px;
@@ -1468,13 +1474,20 @@ a {
       padding-left: 24px; } }
 
 .tab {
+  font-family: "Poppins", "Arial", sans-serif;
   position: relative;
-  display: block; }
+  display: block;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px; }
   .tab::before {
     content: "";
     display: block;
     position: absolute;
-    top: calc(50% - 10px);
+    top: calc(50% - 8px);
     left: auto;
     width: 10px;
     height: 10px;
@@ -1524,6 +1537,7 @@ a {
 
 .promo-gallery > a {
   display: inline-block;
+  vertical-align: top;
   font-weight: 500;
   border-bottom: 1px solid #a87b62;
   margin-bottom: 61px; }
@@ -1644,10 +1658,6 @@ a {
       .catalog__filter--hide {
         display: none; } }
 
-.catalog__filter a {
-  display: block;
-  padding: 23px 25px; }
-
 a.catalog__filter-close {
   display: none; }
   @media (max-width: 1023px) {
@@ -1704,7 +1714,7 @@ a.catalog__filter-close {
   border-bottom: none; }
   .catalog__filter fieldset:last-of-type {
     border-bottom: 1px solid #a87b62;
-    margin-bottom: 35px; }
+    margin-bottom: 34px; }
   @media (max-width: 1023px) {
     .catalog__filter fieldset {
       border-top: none;
@@ -1714,7 +1724,6 @@ a.catalog__filter-close {
 
 .catalog__filter .tab-content {
   position: relative;
-  margin-top: 67px;
   padding-left: 35px;
   padding-right: 10px;
   padding-bottom: 11px; }
@@ -1733,26 +1742,22 @@ a.catalog__filter-close {
   .catalog__filter .tab--open::before {
     top: calc(50% - 5px); } }
 
-.catalog__filter legend {
+.catalog__filter .tab {
   position: relative;
   display: block;
-  padding: 0;
+  padding: 23px 25px;
   width: 100%;
   height: 100%;
-  float: left; }
-  .catalog__filter legend:hover {
+  cursor: pointer; }
+  .catalog__filter .tab:hover {
     color: #a87b62; }
-  .catalog__filter legend::after {
-    content: " ";
-    display: table;
-    clear: both; }
 
 .catalog__filter label {
   position: relative;
   display: block;
   padding-left: 25px;
   margin-top: 3px;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
   font-size: 14px;
   line-height: 18px;
   cursor: pointer; }
@@ -1901,7 +1906,7 @@ a.catalog__filter-close {
 .price-range {
   position: relative;
   margin-left: -25px;
-  margin-top: 3px;
+  margin-top: 1px;
   width: calc(100% + 25px);
   height: 1px;
   padding-top: 0;
@@ -1920,7 +1925,7 @@ a.catalog__filter-close {
   position: absolute;
   top: 0;
   left: 25%;
-  right: 20%;
+  right: 22%;
   height: 1px;
   background-color: #a87b62; }
 
