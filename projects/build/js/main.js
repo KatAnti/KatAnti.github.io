@@ -50,26 +50,11 @@
     toggleMobileMenu();
   });
 
-  var isIos = function () {
-    return [
-      'iPad Simulator',
-      'iPhone Simulator',
-      'iPod Simulator',
-      'iPad',
-      'iPhone',
-      'iPod'
-    ].includes(navigator.platform)
-    // iPad on iOS 13 detection
-    || (navigator.userAgent.includes('Mac') && 'ontouchend' in document);
-  };
-  console.log(isIos());
-  if (!isIos()) {
-    mobileWidth.addEventListener('change', function () {
-      if (!mobileWidth.matches && menu.classList.contains('main-nav--open')) {
-        toggleMobileMenu();
-      }
-    });
-  }
+  window.addEventListener('resize', function () {
+    if (!mobileWidth.matches && menu.classList.contains('main-nav--open')) {
+      toggleMobileMenu();
+    }
+  }, false);
 
 })();
 
@@ -238,7 +223,7 @@
       mobileCounter.classList.add('swiper-count-mobile--show');
     }
 
-    mobileWidth.addEventListener('change', function () {
+    window.addEventListener('resize', function () {
       setSlidesCounter();
 
       if (!mobileWidth.matches) {
@@ -246,7 +231,7 @@
       } else {
         mobileCounter.classList.add('swiper-count-mobile--show');
       }
-    });
+    }, false);
 
     swiper.on('slideChangeTransitionEnd', function () {
       setSlidesCounter();
