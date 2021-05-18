@@ -173,7 +173,7 @@
   var sliderContainer = document.querySelector('.swiper-container');
   var mobileCounter = document.querySelector('.swiper-count-mobile');
 
-  var swiper = new window.Swiper('.swiper-container', {
+  /*var swiper = new window.Swiper('.swiper-container', {
     direction: 'horizontal',
     slidesPerView: 2,
     slidesPerGroup: 2,
@@ -216,7 +216,7 @@
 
   swiper.init();
 
-  /* if (sliderContainer) {
+  if (sliderContainer) {
     setSlidesCounter();
 
     if (mobileWidth.matches) {
