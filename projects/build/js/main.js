@@ -49,8 +49,21 @@
   menuToggle.addEventListener('click', function () {
     toggleMobileMenu();
   });
-  console.log(mobileWidth);
-  if (mobileWidth) {
+
+  var isIos = function () {
+    return [
+      'iPad Simulator',
+      'iPhone Simulator',
+      'iPod Simulator',
+      'iPad',
+      'iPhone',
+      'iPod'
+    ].includes(navigator.platform)
+    // iPad on iOS 13 detection
+    || (navigator.userAgent.includes('Mac') && 'ontouchend' in document);
+  };
+
+  if (!isIos) {
     mobileWidth.addEventListener('change', function () {
       if (!mobileWidth.matches && menu.classList.contains('main-nav--open')) {
         toggleMobileMenu();
