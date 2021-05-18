@@ -49,12 +49,14 @@
   menuToggle.addEventListener('click', function () {
     toggleMobileMenu();
   });
-
-  mobileWidth.addEventListener('change', function () {
-    if (!mobileWidth.matches && menu.classList.contains('main-nav--open')) {
-      toggleMobileMenu();
-    }
-  });
+  console.log(mobileWidth);
+  if (mobileWidth) {
+    mobileWidth.addEventListener('change', function () {
+      if (!mobileWidth.matches && menu.classList.contains('main-nav--open')) {
+        toggleMobileMenu();
+      }
+    });
+  }
 
 })();
 
