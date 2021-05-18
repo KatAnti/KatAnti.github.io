@@ -62,8 +62,8 @@
     // iPad on iOS 13 detection
     || (navigator.userAgent.includes('Mac') && 'ontouchend' in document);
   };
-
-  if (!isIos) {
+  console.log(isIos());
+  if (!isIos()) {
     mobileWidth.addEventListener('change', function () {
       if (!mobileWidth.matches && menu.classList.contains('main-nav--open')) {
         toggleMobileMenu();
