@@ -151,8 +151,7 @@
       </div>
     </footer>
     <div class="body__overlay body__overlay--show">
-      <div class="popup popup--show cart-popup">
-        <button class="popup__close-button" type="button">Close popup</button>
+      <div class="popup popup--show cart-popup" tabindex="0" autofocus="">
         <div class="cart-popup__title">The item was added to your cart</div>
         <div class="cart-popup__product-info">
           <picture>
@@ -178,6 +177,7 @@
         </div>
         <a class="cart-popup__btn cart-popup__btn--continue" href="catalog.html">Continue shopping</a>
         <a class="cart-popup__btn cart-popup__btn--cart" href="#">Checkout</a>
+        <a class="popup__close-button" href="index.html">Close popup</a>
       </div>
     </div>
     <script src="js/vendor.js"></script>

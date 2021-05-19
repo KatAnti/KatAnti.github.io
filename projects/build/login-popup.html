@@ -152,17 +152,17 @@
     </footer>
     <div class="body__overlay body__overlay--show">
       <div class="popup popup--show login-popup">
-        <button class="popup__close-button" type="button">Close popup</button>
         <form class="login-popup__form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="login-popup__title">Log In</div>
           <label for="login-email" class="visually-hidden">Enter Your E-mail</label>
-          <input type="email" name="login-email" placeholder="Your E-mail" id="login-email" required="">
+          <input type="email" name="login-email" placeholder="Your E-mail" id="login-email" required="" autofocus="">
           <label for="login-password" class="visually-hidden">Enter Your Password</label>
           <input type="password" name="login-password" placeholder="Password" id="login-password" required="">
           <a class="login-popup__forgot-link" href="#">Forgot your password?</a>
           <button class="login-popup__btn" type="submit">Log In</button>
           <p>Don’t have an account? <a href="#">Sign up</a></p>
         </form>
+        <a class="popup__close-button" href="index.html">Close popup</a>
       </div>
     </div>
     <script src="js/vendor.js"></script>

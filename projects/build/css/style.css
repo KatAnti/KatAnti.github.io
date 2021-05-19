@@ -374,7 +374,8 @@ a {
   padding: 0;
   background-color: transparent;
   -webkit-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  cursor: pointer; }
   @media (max-width: 1023px) {
     .header__search button {
       fill: #ffffff;
@@ -388,11 +389,15 @@ a {
   width: 100%;
   height: 40px;
   font-family: "Poppins", "Arial", sans-serif;
+  display: block;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
   padding-left: 30px;
   border-radius: 21px;
   border: none;
   font-size: 14px;
-  color: #9b9997; }
+  color: #1d1613; }
   .header__search input::-webkit-input-placeholder {
     color: #9b9997; }
   .header__search input::-moz-placeholder {
@@ -427,6 +432,16 @@ a {
       .header__search input::-ms-input-placeholder {
         color: transparent; }
       .header__search input::placeholder {
+        color: transparent; }
+      .header__search input:hover::-webkit-input-placeholder {
+        color: transparent; }
+      .header__search input:hover::-moz-placeholder {
+        color: transparent; }
+      .header__search input:hover:-ms-input-placeholder {
+        color: transparent; }
+      .header__search input:hover::-ms-input-placeholder {
+        color: transparent; }
+      .header__search input:hover::placeholder {
         color: transparent; } }
 
 .header__links {
@@ -850,7 +865,7 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  color: #9b9997;
+  color: #ffffff;
   width: 70%; }
 
 .subscription-form__submit {
@@ -1778,6 +1793,13 @@ a.catalog__filter-close {
 .catalog__filter input:checked + label::before {
   background-color: #a87b62; }
 
+.catalog__filter input:focus + label::before {
+  -webkit-box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2); }
+
+.catalog__filter input:focus + label {
+  color: #a87b62; }
+
 .catalog__filter button[type="submit"] {
   font-family: "Poppins", "Arial", sans-serif;
   display: block;
@@ -1933,6 +1955,7 @@ a.catalog__filter-close {
   width: 15px;
   height: 15px;
   position: absolute;
+  padding: 0;
   top: -6px;
   border-radius: 8px;
   border: none;
